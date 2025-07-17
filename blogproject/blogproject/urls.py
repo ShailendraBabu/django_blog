@@ -25,6 +25,7 @@ urlpatterns = [
     path('', views.homepage),
     path('about/', views.about),
     path('posts/', include('posts.urls')),  # Include URLs from the posts app
+    path('users/', include('users.urls')),  # Include URLs from the users app
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
