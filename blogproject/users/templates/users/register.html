@@ -1,16 +1,14 @@
-{% extends "layouts.html" %} 
+{% extends 'layouts.html' %}
 
 {% block title %}
-  Register a user
+    Register a New User
 {% endblock %}
 
 {% block content %}
-  <section>
-    <h1>Register a new user</h1>
-    <form class="form-with-validation" action="/users/register/" method = "post">
-      {% csrf_token %}
-      {{ form }}
-      <button class = "form-submit">submit</button>
+    <h1>Register a New User</h1>
+    <form class="form-with-validation" action="{% url 'users:register' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button class="form-submit">Submit</button>
     </form>
-  </section>
 {% endblock %}
