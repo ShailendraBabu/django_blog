@@ -35,6 +35,4 @@ This application includes:
 - Django REST Framework (DRF)
 - SQLite (default database)
 - Bootstrap 5
-- Swagger (via drf-yasg)
-
 ---
